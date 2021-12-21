@@ -695,8 +695,8 @@ namespace v2rayN
             ServicePointManager.SecurityProtocol = SecurityProtocolType.Ssl3
                                        | SecurityProtocolType.Tls
                                        | SecurityProtocolType.Tls11
-                                       | SecurityProtocolType.Tls12
-                                       | SecurityProtocolType.Tls13;
+                                       | SecurityProtocolType.Tls12;
+                                       //| SecurityProtocolType.Tls13;
             ServicePointManager.DefaultConnectionLimit = 256;
         }
         #endregion
