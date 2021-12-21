@@ -40,10 +40,12 @@ namespace v2rayN
                 string lang = Utils.RegReadValue(Global.MyRegPath, Global.MyRegKeyLanguage, "zh-Hans");
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(lang);
 
-                //Application.EnableVisualStyles();
-                //Application.SetCompatibleTextRenderingDefault(false);
-                //Application.Run(new MainForm());
+                //  Application.EnableVisualStyles();
+                //  Application.SetCompatibleTextRenderingDefault(false);
+                //  Application.Run(new MainForm());
+
                 v2form.Show();
+
             }
             else
             {

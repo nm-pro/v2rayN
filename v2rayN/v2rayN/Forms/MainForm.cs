@@ -28,8 +28,8 @@ namespace v2rayN.Forms
         {
             InitializeComponent();
             this.ShowInTaskbar = false;
-            this.WindowState = FormWindowState.Minimized;
-            HideForm();
+            //this.WindowState = FormWindowState.Minimized;
+            //HideForm();
             this.Text = Utils.GetVersion();
             Global.processJob = new Job();
 
