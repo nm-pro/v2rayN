@@ -12,6 +12,7 @@ namespace v2rayN
         [System.Runtime.InteropServices.DllImport("user32.dll")]
         private static extern bool SetProcessDPIAware();
 
+        private static MainForm v2form = new MainForm();
         /// <summary>
         /// 应用程序的主入口点。
         /// </summary>
@@ -39,9 +40,10 @@ namespace v2rayN
                 string lang = Utils.RegReadValue(Global.MyRegPath, Global.MyRegKeyLanguage, "zh-Hans");
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(lang);
 
-                Application.EnableVisualStyles();
+                //Application.EnableVisualStyles();
                 //Application.SetCompatibleTextRenderingDefault(false);
-                Application.Run(new MainForm());
+                //Application.Run(new MainForm());
+                v2form.Show();
             }
             else
             {
